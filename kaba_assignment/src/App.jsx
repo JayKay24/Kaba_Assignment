@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Integration } from './components/integration'
 import { Analyze } from './components/Analyze';
 
