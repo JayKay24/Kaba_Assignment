@@ -4,13 +4,15 @@ import { Analyze } from './components/Analyze';
 
 function App() {
   const [analysis, setAnalysis] = useState(null);
+  const [loading, setLoading] = useState(false);
 
   return (
     <>
       <div>
-        {analysis && <div>{analysis}</div>}
-        <Analyze setAnalysis={setAnalysis} />
+        { loading && <div>Loading...</div> }
+        { analysis && <div>{analysis}</div> }
         <Integration />
+        <Analyze setAnalysis={setAnalysis} setLoading={setLoading} />
       </div>
     </>
   )
