@@ -3,7 +3,7 @@ import { Integration } from './components/integration'
 import { Analyze } from './components/Analyze';
 
 function App() {
-  const [analysis, setAnalysis] = useState(null);
+  const [analysis, setAnalysis] = useState('');
   const [loading, setLoading] = useState(false);
 
   return (

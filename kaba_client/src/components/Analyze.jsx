@@ -11,6 +11,7 @@ const Analyze = ({ setAnalysis, setLoading }) => {
       const formData = new FormData();
       formData.append('csvFile', csvFile);
 
+      setAnalysis('');
       setLoading(true);
 
       const { data } = await axios.post('http://127.0.0.1:5000/analyze', formData);
